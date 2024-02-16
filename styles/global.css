@@ -136,16 +136,18 @@ h1 {
   padding: 16px 124px;
 }
 
+/* signin.css */
+
+.auth-container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
 .logo-home-button {
   display: block;
   text-align: center;
   margin-top: 136px;
   margin-bottom: 40px;
-}
-
-form {
-  max-width: 640px;
-  margin: 0 auto;
 }
 
 .input-item {
