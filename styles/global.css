@@ -1,3 +1,18 @@
+:root {
+  /* Gray scale */
+  --gray-900: #1b1d1f;
+  --gray-800: #26282b;
+  --gray-600: #454c53;
+  --gray-500: #72787f;
+  --gray-400: #9ea4a8;
+  --gray-200: #e5e7eb;
+  --gray-100: #e8ebed;
+  --gray-50: #f7f7f8;
+
+  /* Primary color */
+  --blue: #3692ff;
+}
+
 /* 
   전체 선택자(*) 및 a, button, img 태그에 대한 CSS는 새로운 웹 개발 프로젝트를 시작할 때 전역 스타일에 기본적으로 넣어주면 좋은 내용들입니다. 
   브라우저 간의 스타일 차이를 최소화하고 예측 가능한 레이아웃을 위해 브라우저 기본 세팅을 일부 리셋해 준다고 생각하면 됩니다. 
@@ -75,7 +90,7 @@ footer {
 #footerMenu {
   display: flex;
   gap: 30px;
-  color: #e5e7eb;
+  color: var(--gray-200);
 }
 
 #socialMedia {
@@ -114,7 +129,7 @@ button {
 
 /* 위에서 스타일링해준 <button> 태그와 달리 버튼 모양이지만 <a> 태그를 사용한 class='button' 요소들을 지칭하는 부분이니 혼동하지 않도록 주의하세요. */
 .button {
-  background-color: #3692ff;
+  background-color: var(--blue);
   color: #ffffff;
   display: inline-flex;
   align-items: center;
