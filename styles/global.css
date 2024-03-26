@@ -86,7 +86,7 @@ header {
   border-bottom: 1px solid #dfdfdf;
 }
 
-main {
+.with-header {
   margin-top: 70px;
 }
 
