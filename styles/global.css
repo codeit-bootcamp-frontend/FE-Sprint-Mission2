@@ -41,14 +41,11 @@ a {
   color: inherit;
 }
 
-button {
-  background: none;
-  border: none;
-  outline: none;
-  box-shadow: none;
-  cursor: pointer;
-
-  /* form 내에서 사용되는 버튼 스타일 리셋: 브라우저 간 스타일 차이를 최소화하기 위해 버튼 기본 스타일을 제거하고 부모 요소로부터 속성을 상속 받도록 함 */
+/* form 요소 스타일 리셋: 브라우저 간 스타일 차이를 최소화하기 위해 기본 스타일을 제거하고 부모 요소로부터 속성을 상속 받도록 했어요. */
+button,
+input,
+textarea,
+select {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -56,6 +53,14 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
 }
 
 img {
