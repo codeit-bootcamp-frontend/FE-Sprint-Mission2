@@ -53,10 +53,9 @@
   align-items: center;
 }
 
-.toggle-password {
+.password-toggle-button {
   position: absolute;
   right: 24px;
-  cursor: pointer;
 }
 
 .social-login-container {

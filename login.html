@@ -79,11 +79,15 @@
               type="password"
               placeholder="비밀번호를 입력해 주세요"
             />
-            <img
-              src="images/icons/eye-invisible.svg"
-              alt="비밀번호 숨김"
-              class="toggle-password"
-            />
+            <!-- 
+              <button> type 속성의 중요성
+              - <form> 내에 있는 <button>은 type 속성을 명시하지 않으면 기본적으로 type="submit"으로 적용됩니다. 
+              - 비밀번호 토글 버튼을 클릭했을 때 페이지가 새로고침되는 현상이 있었다면 아마 이 이슈였을 거예요.
+              - 원치 않을 때 폼이 제출되는 것을 막기 위해, 제출 버튼이 아니라면 type="button"을 꼭 추가해 주세요!
+            -->
+            <button type="button" class="password-toggle-button">
+              <img src="images/icons/eye-invisible.svg" alt="비밀번호 숨김" />
+            </button>
           </div>
         </div>
 
